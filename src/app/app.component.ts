@@ -6,7 +6,7 @@ export class Hero{
 }
 
 @Component({
-  selector: 'app-zmy',
+  selector: 'app-root',//不能随便改
   styleUrls: ['./app.component.css'],
   template: `
             <h1>{{title}}</h1>
