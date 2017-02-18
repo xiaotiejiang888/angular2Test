@@ -11,7 +11,7 @@ import 'rxjs/add/operator/switchMap'
   styleUrls: ['./hero-detail.component.css']
 })
 export class HeroDetailComponent implements OnInit{
-  @Input() hero:Hero;
+  hero:Hero;
   ngOnInit ():void{
     this.route.params
       .switchMap((params:Params)=>this.heroService.getHero(+params['id']))
