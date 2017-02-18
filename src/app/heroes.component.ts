@@ -6,7 +6,6 @@ import{HeroService} from "./hero.service"
   selector: 'my-heroes',//不能随便改
   // styleUrls: ['./app.component.css'],
   template: `
-            <h1>{{title}}</h1>
             <h2>My Heroes</h2>
             <ul class="heroes">
               <li *ngFor="let hero of heroes" [class.selected]="hero === selectedHero" (click)="onSelect(hero)">
@@ -64,7 +63,7 @@ import{HeroService} from "./hero.service"
     border-radius: 4px 0 0 4px;
   }
 `],
-  providers: [HeroService]
+  providers: []
   })
 export class HeroesComponent implements OnInit {
   ngOnInit(): void {
