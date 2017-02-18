@@ -3,7 +3,7 @@ import { OnInit } from '@angular/core';
 import {Hero} from "./hero";
 import{HeroService} from "./hero.service"
 @Component({
-  selector: 'app-root',//不能随便改
+  selector: 'my-heroes',//不能随便改
   // styleUrls: ['./app.component.css'],
   template: `
             <h1>{{title}}</h1>
@@ -66,7 +66,7 @@ import{HeroService} from "./hero.service"
 `],
   providers: [HeroService]
   })
-export class AppComponent implements OnInit {
+export class HeroesComponent implements OnInit {
   ngOnInit(): void {
     this.getHeroes()
   }
