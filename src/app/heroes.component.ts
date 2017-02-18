@@ -13,6 +13,7 @@ import{HeroService} from "./hero.service"
               </li>
             </ul>
             <app-hero-detail [hero]="selectedHero"></app-hero-detail>
+            <router-outlet></router-outlet>
             `,
   styles: [`
   .selected {
@@ -69,7 +70,7 @@ export class HeroesComponent implements OnInit {
   ngOnInit(): void {
     this.getHeroes()
   }
-  title = 'Tour of Heroes';
+
   heroes :Hero[];
   // hero:Hero = {
   //   id:1,
